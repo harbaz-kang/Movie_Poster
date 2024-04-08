@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Harbaz & Ramanjot">
+    <meta name="description" content="A simple pizza order form created using HTML and CSS">
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="images/pizzafavicon.jpg" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- Main heading of the page -->
+    <header>
+        <h1 id="heading1">Pizza at your Door!!</h1>
+    </header>
+
+    <main>
+        <form action="Order confirmation.html" method="get">
+            
+            <!-- Container containing Personal Information -->
+            <div class="container1">
+                <h3>Personal Information</h3>
+                <fieldset>
+                    <p>
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Your first name" required>
+                    </p>
+                    <p>
+                        <label for="lastame">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Your last name" required>
+                    </p>
+                    <p>
+                        <label for="e-mail">E-mail</label>
+                        <input type="email" id="e-mail" name="e-mail" placeholder="Your E-mail" required>
+                    </p>
+                    <p>
+                        <label for="contact">Contact</label>
+                        <input type="tel" id="contact" name="contact" placeholder="Your mobile number" required>
+                    </p>
+                    <p>
+                        <label for="address1">Address Line 1</label>
+                        <textarea id="address1" name="address1" placeholder="House no., Street" required></textarea>
+                    </p>
+                    <p>
+                        <label for="address2">Address Line 2</label>
+                        <textarea id="address2" name="address2" placeholder="City, Province" required></textarea>
+                    </p>
+                    <p>
+                        <label for="postal-code">Postal Code</label>
+                        <input type="text" id="postal-code" name="postal-code" placeholder="Your postal code" required>
+                    </p>
+                </fieldset>
+            </div>
+
+            <!-- Container containing Order Information -->
+            <div class="container2">
+                <h3>Order Information</h3>
+                <fieldset>
+                    <p>
+                        <label>No. of pizzas</label>
+                        <input type="number" id="numofpizzas" name="no._of_pizzas" placeholder="Number of pizzas"
+                            required>
+                    </p>
+                    <p>
+                        <label>Size</label>
+                        <select id="size" name="size">
+                            <option value="Small">Small</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Large">Large</option>
+                            <option value="X-Large">X-Large</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label>Dough</label>
+                        <select id="dough" name="dough">
+                            <option value="regular-dough">Regular Dough</option>
+                            <option value="stuffed-crust">Stuffed Crust</option>
+                            <option value="regular-thin-crust">Regular Thin Crust</option>
+                            <option value="regular-thick-crust">Regular Thick Crust</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label>Base Sauce</label>
+                        <select id="base-sauce" name="base-sauce">
+                            <option value="no-sauce">No Sauce</option>
+                            <option value="creamy-garlic-sauce">Creamy Garlic Sauce</option>
+                            <option value="Italian Tomato Sauce">Italian Tomato Sauce</option>
+                            <option value="Butter Chicken Sauce">Butter Chicken Sauce</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label>Base Cheese</label>
+                        <select id="base-cheese" name="base-cheese">
+                            <option value="no-cheese">No Cheese</option>
+                            <option value="mozzarella-cheese">Mozzarella Cheese</option>
+                            <option value="dairy-free-cheese">Dairy Free Cheese</option>
+                            <option value="six-cheese-base">Six Cheese Base</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="toppings">Toppings</label><br>
+                        <input type="checkbox" id="topping1" name="topping1" value="green-olives">
+                        <label for="topping1">Green Olives</label><br>
+                        <input type="checkbox" id="topping2" name="topping2" value="red-onions">
+                        <label for="topping2">Red Onions</label><br>
+                        <input type="checkbox" id="topping3" name="topping3" value="jalapeno-peppers">
+                        <label for="topping3">Jalapeno Peppers</label><br>
+                        <input type="checkbox" id="topping4" name="topping4" value="black-olives">
+                        <label for="topping4">Black Olives</label><br>
+                        <input type="checkbox" id="topping5" name="topping5" value="roma-tomatoes">
+                        <label for="topping5">Roma Tomatoes</label><br>
+                        <input type="checkbox" id="topping6" name="topping6" value="fresh-mushrooms">
+                        <label for="topping6">Fresh Mushrooms</label><br>
+                    </p>
+
+                    <p>
+                        <label>Special Instructions</label>
+                        <textarea id="special-instructions" name="special-instructions"
+                            placeholder="Instructions, if any"></textarea>
+                    </p>
+                </fieldset>
+            </div>
+
+            <!-- Container containing Payment Information -->
+            <div class="container3">
+                <h3>Payment Information</h3>
+                <fieldset>
+                    <p>
+                        <label>Bank name</label><br>
+                        <input type="radio" id="scotia" name="bank-name" value="scotia" required>
+                        <label for="scotia">Scotia</label><br>
+                        <input type="radio" id="cibc" name="bank-name" value="cibc">
+                        <label for="cibc">CIBC</label><br>
+                        <input type="radio" id="rbc" name="bank-name" value="rbc">
+                        <label for="rbc">RBC</label><br>
+                        <input type="radio" id="td" name="bank-name" value="td">
+                        <label for="td">TD</label><br>
+                        <input type="text" id="other" name="bank-name" placeholder="Specify if not from above options">
+                    </p>
+                    <p>
+                        <label>Card Type</label><br>
+                        <input type="radio" id="debit-card" name="card" value="debit-card" required>
+                        <label for="debit-card">Debit Card</label><br>
+                        <input type="radio" id="credit-card" name="card" value="credit-card">
+                        <label for="credit-card">Credit Card</label><br>
+                        <input type="radio" id="scene-card" name="card" value="scene-card">
+                        <label for="scene-card">Scene Card</label><br>
+                    </p>
+                    <p>
+                        <label for="card-number">Card Number</label>
+                        <input type="password" id="card-number" name="card-number" placeholder="Your card number"
+                            required>
+                    </p>
+                    <p>
+                        <label for="expiration-date">Expiration Date</label>
+                        <input type="date" id="expiration-date" name="expiration-date" required>
+                    </p>
+                    <p>
+                        <label for="card-number">CVV</label>
+                        <input type="number" id="cvv" name="cvv" placeholder="Your CVV" required>
+                    </p>
+                    <p>
+                        <input type="text" id="msg" name="msg" placeholder="Message">
+                    </p>
+                </fieldset>
+            </div>
+
+            <!-- Buttons to submit and reset the entered information -->
+            <div id="buttons">
+                <button type="submit" width="50">Order Pizza</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+        <br><br>
+
+        <!-- Images related to pizza -->
+        <div>
+            <img src="images/pizzaimg.jpeg" alt="Pizza picture" height="250" width="370">
+            <img src="images/pizzadelivery.jpg" alt="Delivery of Pizza" height="250" width="370">
+            <img src="images/ilovepizza.jpg" alt="I Love Pizza text" height="250" width="370">
+            <img src="images/pizzawithfriends.jpg" alt="Eating Pizza with friends" height="250" width="370">
+        </div>
+        <br><br>
+    </main>
+
+    <!-- Contact information of the pizza company -->
+    <footer>
+        <p>pizzaatyourdoor.com | pizzaatyourdoor@gmail.com | +1 123-456-7890 </p>
+    </footer>
+</body>
+
+</html>
