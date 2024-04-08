@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+/* Universal Adapter */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Main container */
+.container{
+    margin: 0 40px 0 40px;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /* to add background image */
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+}
+/* creating another container to contain images and text */
+.subcontainer{
+    width: 1200px;
+    height: 700px;
+    border: 2px solid white;
+    background: none;
+    /* to blur the background */
+    backdrop-filter: blur(20px);
+}
+img{
+    /* to align the image to the right */
+    float: right;
+}
+/* main title */
+.name{
+    color:white;
+    font-size: 100px;
+    padding: 50px;
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    letter-spacing: 8px;
+}
+/* text just below main title */
+.chapter{
+    color:white;
+    font-size: 30px;
+    padding: 65px 0;
+    left: 56px;
+    position: absolute;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    letter-spacing: 50px;
+    /* to move the text from top to desired position */
+    top: 82px;
+}
+/* styling paragraph */
+.paragraph{
+    color: white;
+    position: absolute;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+    top: 250px;
+    left: 50px;
+    line-height: 18px;
+}
+/* text in the box for watch now */
+.watch{
+    color: white;
+    font-size: 18px;
+    border: 2px solid white;
+    width: 150px;
+    text-align: center;
+    position: absolute;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    top: 500px;
+    /* to move the text from left to desired position */
+    left: 50px;
+    padding: 20px 70px;
+    letter-spacing: 5px;
+}
+/* footer css */
+footer{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: right;
+    margin-right: 40px;
+}
